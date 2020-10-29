@@ -244,21 +244,6 @@ int main(int argc, char** argv)
 	SetConsoleTitle(L"OdinSF - Client");
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0xF);
 	printf(ConHdr);
-	/*
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x4);
-	//b.assign(GenerateKey("GMKJdNBfHANQ"),14);
-	std::cout << "Enter Password :";
-	for (int i = 0; i < 1000; i++)
-	{
-		c = _getch();
-		if (c == '\r')
-			break;
-		std::cout << "*";
-		a += c;
-	}
-	if (a != b) {
-		return 0;
-	}*/
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x8);
 	CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)DoActions, NULL, NULL, NULL);
 	if (argc > 1) {
